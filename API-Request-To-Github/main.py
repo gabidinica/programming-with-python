@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get('https://api.github.com/users/gabidinica/repos')
+response = requests.get('https://api.github.com/users/{username}/repos')
 my_repos = response.json()
 
 for repo in my_repos:
